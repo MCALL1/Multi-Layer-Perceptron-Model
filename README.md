@@ -1,4 +1,4 @@
-              # Multi-Layer-Perceptron-Model
+   # Multi-Layer-Perceptron-Model
 Feedforward Neural Network (Multi-Layer Perceptron, MLP) 
 Neural Network Summary: Feedforward Neural Network for Predictive Maintenance
 
@@ -39,7 +39,7 @@ indicative of potential faults or calibration requirements.
         The output is then thresholded (e.g., > 0.5) to produce a binary classification
         (1 = calibration needed, 0 = no calibration needed).
 
-    Loss Function and Optimizer:
+  Loss Function and Optimizer:
         Loss Function: Binary cross-entropy, which is appropriate for binary 
         classification tasks.
         Optimizer: Adam (Adaptive Moment Estimation) is used for efficient and
