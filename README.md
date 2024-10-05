@@ -17,13 +17,17 @@ indicative of potential faults or calibration requirements.
         training data (after preprocessing).
 
     Hidden Layers:
-        The network includes two hidden layers:
-            First Hidden Layer: Contains 64 neurons with a ReLU (Rectified Linear Unit) activation function. 
+            The network includes two hidden layers:
+            
+            First Hidden Layer:
+                  Contains 64 neurons with a ReLU (Rectified Linear Unit) activation function. 
             This layer learns complex patterns from the input data.
             Dropout Layer: Applies dropout regularization to prevent overfitting by
-            randomly deactivating 50% of the neurons during each training iteration.
-            Second Hidden Layer: Contains 32 neurons, 
-            also using a ReLU activation function, allowing the network to model 
+            randomly deactivating 50% of the neurons during each training iteration.  
+            
+            Second Hidden Layer: 
+                 Contains 32 neurons,  also using a ReLU activation function,
+            allowing the network to model 
             intricate relationships in the data.
             Another Dropout Layer: Similar to the first,
             it helps prevent overfitting by randomly deactivating neurons.
