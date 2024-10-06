@@ -17,20 +17,20 @@ indicative of potential faults or calibration requirements.
         training data (after preprocessing).
 
     Hidden Layers:
-            The network includes two hidden layers:
+         The network includes two hidden layers:
             
-            First Hidden Layer:
-                  Contains 64 neurons with a ReLU (Rectified Linear Unit) activation function. 
-            This layer learns complex patterns from the input data.
-            Dropout Layer: Applies dropout regularization to prevent overfitting by
-            randomly deactivating 50% of the neurons during each training iteration.  
+        First Hidden Layer:
+            Contains 64 neurons with a ReLU (Rectified Linear Unit) activation function. 
+         This layer learns complex patterns from the input data.
+         Dropout Layer: Applies dropout regularization to prevent overfitting by
+         randomly deactivating 50% of the neurons during each training iteration.  
             
-            Second Hidden Layer: 
-                 Contains 32 neurons,  also using a ReLU activation function,
-            allowing the network to model 
-            intricate relationships in the data.
-            Another Dropout Layer: Similar to the first,
-            it helps prevent overfitting by randomly deactivating neurons.
+       Second Hidden Layer: 
+            Contains 32 neurons,  also using a ReLU activation function,
+        allowing the network to model 
+        intricate relationships in the data.
+        Another Dropout Layer: Similar to the first,
+        it helps prevent overfitting by randomly deactivating neurons.
 
     Output Layer:
         A single neuron with a sigmoid activation function. This layer produces a
@@ -39,19 +39,17 @@ indicative of potential faults or calibration requirements.
         The output is then thresholded (e.g., > 0.5) to produce a binary classification
         (1 = calibration needed, 0 = no calibration needed).
 
-  Loss Function and Optimizer:
+   Loss Function and Optimizer:
         Loss Function: Binary cross-entropy, which is appropriate for binary 
-        classification tasks.
-        Optimizer: Adam (Adaptive Moment Estimation) is used for efficient and
-        adaptive learning during training.
+        classification tasks. Optimizer: Adam (Adaptive Moment Estimation)
+        is used for efficient and adaptive learning during training.
 
    Model Training
 
     The neural network is trained using the synthetic dataset that includes 
     various sensor readings and equipment states over a 90-day period.
     A StandardScaler is used to normalize input features, which helps 
-    stabilize the training 
-    process and improve model performance.
+    stabilize the training  process and improve model performance.
     The model is trained for a specified number of epochs with a mini-batch size to 
     iteratively adjust the network weights using backpropagation.
 
